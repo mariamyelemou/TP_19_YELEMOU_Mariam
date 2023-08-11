@@ -1,184 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FormWizard_v1</title>
     <link rel="stylesheet" href="style.css">
+    <script src = "https://ajax.gooleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <div class="container">
+<div class="container">       
+    <div class="premier">
         <div class="left">
-            <div class="image">
-                <img src="coeur.avif" alt="">
-            </div>
+            <img src="orange.avif" alt="">
         </div>
-        <div class="right"
+        <div class="right">
             <div class="Formulaire">
-                 <h1 class="REGISTRATION">REGISTRATION</h1><br>
-                <div class="indicateur">
-                    <span class="ligne"><span></span></span>
-                    <p class="active">ONE</p>
-                    <p class="active">TWO</p>
-                    <p class="active">TREE</p>
+                <h1 class="title">REGISTRATION</h1>
+                <div class="indicateur" style="display: flex;">
+                    <span class="step1" id="step-1">1</span>
+                    <span class="step2" id="step-2">2</span>
+                    <span class="step3" id="step-3">3</span>
                 </div>
-                <h2 class="English">Please fill with your details</h2>
-                <form action="#">
-                    <div class="tab1">
-                        <div class="form">
-                            <input type="text" placeholder="First Name">
-                        </div>
-                        <div class="form">
-                            <input type="text" placeholder="Last Name">
-                        </div>
-                    </div><br>
-                    <div class="tab2">
-                        <div class="form">
-                            <input type="text" placeholder="Your Email" >
-                        </div>
-                        <div class="form">
-                            <input type="text" placeholder="Phone Number">
-                        </div>
-
-                    </div><br>
-                    <div class="tab3">
-                        <div class="form">
-                            <input type="text" placeholder="Age">
-                                <input type="radio" name=type id="humain">
-                                <label for="humain">Male</label>
-                    
-                                <input type="radio" name="type" checked id="humain">
-                                <label for="humain">Female</label>
-                    
-                        </div>
-                    </div><br>
-                    <div class="tab4">
+                <h2 class="Please">Please fill with your details</h2>
+            
+                <div class= "tab" id = "tab-1">
+                    <input type="text" placeholder="First Name" class="A">
+                    <input type="text" placeholder="Last Name"class="A"><br><br><br>
+                    <input type="text" placeholder="Your Email" class="B">
+                    <input type="text" placeholder="Phone Number" class="B"><br><br><br>
+                    <input type="text" placeholder="Age" class="C">
+                    <input type="radio" name=type id="humain"class="C">
+                        <label for="humain">Men</label>
+                    <input type="radio" name="type" checked id="humain" class="C">
+                        <label for="humain">Women</label><br><br>
                         <label for="country">Your country</label>
-                            <select id="country">
-                                <option value="">Choisir une option</option>
-                                <option value="">Burkina Faso</option>
-                                <option value="">Mali</option>
-                                <option value="">Ghana</option>
-                                <option value="">Niger</option>
-                            </select>
-                            <div class="Forward">
-                            <button class="button">Forward
-                                <img src="arrow.png" alt="fleche" class="fleche" />
-                            </button>
+                        <select id="country">
+                            <option value="">Choisir une option</option>
+                            <option value="">Burkina Faso</option>
+                            <option value="">Mali</option>
+                            <option value="">Ghana</option>
+                            <option value="">Niger</option>
+                        </select><br><br> 
+                        <div class="index-btn-wrapper">
+                            <div class="button1">Next</div>                   
                         </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div><br><br><br><br>
-
-
-
-    <div class="container A">
-        <div class="left">
-            <div class="image">
-                <img src="orange.avif" alt="">
-            </div>
-        </div>
-        <div class="right"
-            <div class="Formulaire">
-                 <h1 class="REGISTRATION">REGISTRATION</h1><br>
-                <div class="indicateur">
-                    <span class="ligne"><span></span></span>
-                    <p>one</p>
-                    <p>two</p>
-                    <p>tree</p>
                 </div>
-                <h2 class="English">Please fill with additional info </h2>
-                <form action="#">
-                    <div class="tab1">
-                        <div class="form">
-                            <input type="text" placeholder="Adress">
-                        </div>
-                    </div><br>
-                    <div class="tab2">
-                        <div class="form">
-                            <input type="text" placeholder="City" >
-                        </div>
-                        <div class="form">
-                            <input type="text" placeholder="Zip code">
-                        </div>
-
-                    </div><br>
-                    <div class="tab4">
-                        <label for="country">Your country</label>
-                            <select id="country">
-                                <option value="">Choisir une option</option>
-                                <option value="">Burkina Faso</option>
-                                <option value="">Mali</option>
-                                <option value="">Ghana</option>
-                                <option value="">Niger</option>
-                            </select>
-                            <div class="Backward">
-                                <button class="button">
-                                    <img src="fleche2.png" alt="fleche" class="fleche"/>Backward
-                                </button>
-                            </div>
-                                 <div class="Forward">
-                                    <button class="button">Forward
-                                    <img src="arrow.png" alt="fleche" class="fleche" />
-                                </button>
-                            </div>
-                    </div>
-                </form>
             </div>
         </div>
-    </div><br><br><br><br>
-    
-    
-
-
-    <div class="container B">
+ </div>
+    <div class="deuxieme">
         <div class="left">
-            <div class="image">
-                <img src="orange.avif" alt="">
-            </div>
+            <img src="fraise 1.avif" alt="">
         </div>
-        <div class="right"
+        <div class="right">
             <div class="Formulaire">
-                 <h1 class="REGISTRATION">REGISTRATION</h1><br>
-                <div class="indicateur">
-                    <span class="ligne"><span></span></span>
-                    <p>one</p>
-                    <p>two</p>
-                    <p>tree</p>
+                <h1 class="title">REGISTRATION</h1>
+                <div class="indicateur" style="display: flex;">
+                    <span class="step4" id="step-1">1</span>
+                    <span class="step5" id="step-2">2</span>
+                    <span class="step6" id="step-3">3</span>
+                </div><br><br>
+                <h2 class="Please">Please fill with your details</h2><br>
+        
+                <div class= "tab" id = "tab-2">  
+                    <input type="text" placeholder="Adress" class="A">
+                    <input type="text" placeholder="Adress city"class="A"><br><br><br>
+                    <input type="text" placeholder="Zip code" class="B"><br><br><br>
+                        <select id="country">
+                            <option value="">Choisir une option</option>
+                            <option value="">Burkina Faso</option>
+                            <option value="">Mali</option>
+                            <option value="">Ghana</option>
+                            <option value="">Niger</option>
+                        </select><br><br> 
+                        <div class="index-btn-wrapper">
+                            <div class="button2">Previous</div>                   
+                            <div class="button3">suivant</div>                   
+                        </div>
                 </div>
-                <h2 class="English">Send an optional message</h2>
-                <form action="#">
-                    <input type="text" placeholder="Your message here !!"><br><br><br>
-
-                    <div class="tab4">
-                     <label><input type="checkbox"/>Please accept terms and conditions ?</label><br><br><br>
-                            <div class="Backward">
-                                <button class="button">
-                                    <img src="fleche2.png" alt="fleche" class="fleche"/>Backward
-                                </button>
-                            </div>
-                             <div class="Submit">
-                                    <button class="button">
-                                    <img src="icone v.png" alt="fleche" class="fleche" />Submit
-                                </button>
-                            </div>
-                        </div>   
-                </form>
             </div>
         </div>
     </div>
-    <script src="script.Js"></script> 
-    
-    
+    <div class="troisieme">
+        <div class="left">
+            <img src="coeur.avif" alt="">
+        </div>
+        <div class="right">
+            <div class="Formulaire">
+                <h1 class="title">REGISTRATION</h1>
+                <div class="indicateur" style="display: flex;">
+                    <span class="step7" id="step-1">1</span>
+                    <span class="step8" id="step-2">2</span>
+                    <span class="step9" id="step-3">3</span>
+                </div>
+                <h2>Send an optional message</h2>
 
-
-
-
-
-
-
-
+                <form action="#">
+        
+                <div class= "tab" id = "tab-3">
+                    <input type="text" placeholder="Your message" class="A"><br><br><br>
+                        <div class="index-btn-wrapper">
+                            <div class="button4">Previous</div>
+                            <!-- <div class="button5">Next</div>  -->
+                            <button class="button7" type="Submit" style="background:blue ; margin: 30px;">Submit</button>
+                        </div>
+                </div>
+                <!-- <div class= "tab" id = "tab-4" > -->
+                    <!-- <div class="index-btn-wrapper"> -->
+                        <!-- <div class="button6">Previous</div> -->
+                        <!-- <button class="button7" type="Submit" style="background:blue ;">Submit</button> -->
+                    <!-- </div> -->
+                </div>
+        </div>
+    </div>
+    </form>
+    </div>
+    <script src="index.JS"></script>    
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+        
+
+    
